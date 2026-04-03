@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(247, 245, 245);
+  background-color: rgb(244, 248, 230);
 }
 button {
   margin: 30px;
@@ -34,4 +34,82 @@ button:hover {
   font-family: 'Times New Roman', Times, serif;
   color: rgb(220, 153, 175);
   font-size: 40px;
+}
+form input, textarea{
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(29, 28, 28, 0.2);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form textarea {
+  width: 300px;
+  height: 150px;
+}
+.navbar {
+  background-color: #c2f269;
+  width: 1fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar div{
+  display: flex;
+  gap: 20px;
+}
+.navlink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.brief {
+  display: flex;
+}
+.brief img {
+  width: 500px;
+  height: 500px;
+  object-fit: fill;
+
+}
+.brief-text {
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.Nav {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.Sales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(244, 208, 160);
+  margin-top: 0;
+  color: black;
+}
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 50px;
+  color: white;
 }

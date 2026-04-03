@@ -59,28 +59,22 @@ function Home() {
   } ]; 
   return (
     <div>
-      <h1>Welcome to Our Site</h1>
-      <p>This is the home page.</p>
-
-      <div className="test">
-      <h1>Test section</h1>
-
-      <div className='countx'>
-      <button 
-      onClick={() => {setCounter(counter + 1)}}>
-        Add
-        </button>
-        <h2> {counter} </h2>
-        <button onClick ={() => {setCounter(counter - 1)}}>
-        Subtract
-        </button>
+      <div className='promo'>
+        <p>Most unique perfumes of the market !</p>
       </div>
-      <h1 className="title">User List</h1>
-        <button 
-        onClick={() => {setShowUsers(!showUsers)}}>
-        {showUsers ? "Hide Users" : "Show Users"}
-        </button>
-      
+      <div className='Sales'>
+        <p>Don't miss our wild April sales get 30% off your entire cart</p>
+      </div>
+      <div className='brief'>
+      <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/l/u/LUMO-farmer-and-domitilah.jpeg?crop=0%2C0%2C1801%2C1351&wid=300&hei=225&scl=6.004444444444444" alt="a picture of biodiversity" />
+      <div className='brief-text'>
+      <p>A BRAND LIKE NO OTHER</p>
+      <p>Discover the sacred scents of Africa</p>
+      <p>A 100% african ingredients</p>
+      </div>
+      </div>
+        
+      <div className="users">
         {
       showUsers &&users.map((user, id) => (
         <UserProfile 
@@ -93,6 +87,21 @@ function Home() {
       ))
     }
     </div>
+    <div className='countx'>
+        <button 
+        onClick={() => {setCounter(counter + 1)}}>
+        Add
+        </button>
+        <h2> {counter} </h2>
+        <button onClick ={() => {setCounter(counter - 1)}}>
+        Subtract
+        </button>
+        </div>
+        <h1 className="title">User List</h1>
+        <button 
+        onClick={() => {setShowUsers(!showUsers)}}>
+        {showUsers ? "Hide Users" : "Show Users"}
+        </button>
 
     <div className="test">
       <h1 className="title">Movies List</h1>

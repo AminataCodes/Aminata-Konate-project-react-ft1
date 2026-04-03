@@ -1,12 +1,14 @@
 import styles from "./UserProfile.module.css"
+import './../App.css'
 
 function UserProfile(props) {
   
+  
   return ( 
     <>
-      <div className={styles.card}>
+      <div className={styles.card} onClick={() => {alert("You clicked on " + props.Name)}}>
       
-    <h1>{props.Name} {props.lastname}</h1>
+    <h2>{props.Name} {props.lastname}</h2>
       <h2>Date of Birth: {props.Dateofbirth}</h2>
       <h2>Je suis actuellement en {props.classe}</h2> 
       </div> 
