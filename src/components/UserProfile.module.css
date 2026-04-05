@@ -1,13 +1,26 @@
 .card {
-    border: 1px solid #000;
+    border: none;
     padding: 20px;
     margin: 20px;
     background-color: rgb(226, 225, 225);
-    border-radius: 40px;
     transition: 0.2s;
 }
 .card:hover {
     background-color: rgb(226, 225, 225);
     opacity: 0.8;
     transform: scale(1.05);
+}
+.PrefumePreviewImg {
+    width: 400px;
+    height: 600px;
+}
+.PrefumePreviewDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.style.card {
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }

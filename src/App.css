@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(244, 248, 230);
+  background-color: white;
 }
 button {
   margin: 30px;
@@ -53,20 +53,21 @@ form textarea {
   height: 150px;
 }
 .navbar {
-  background-color: #c2f269;
+  background-color: white;
   width: 1fr;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 60px;
+}
+.navbar h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-size: 40px;
 }
 .navbar div{
   display: flex;
   gap: 20px;
-}
-.navlink {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
 }
 .users {
   display: grid;
@@ -76,22 +77,31 @@ form textarea {
 }
 .brief {
   display: flex;
+  height: 470px;
 }
 .brief img {
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: auto;
   object-fit: fill;
 
 }
 .brief-text {
   justify-content: center;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: rgb(192, 234, 250);
+  
+  color: black;
+  background: linear-gradient(to right, rgba(192, 234, 250, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
-
+.brief-text p {
+  font-size: 20px;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+  justify-items: center;
+}
 .Nav {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
 }
@@ -100,16 +110,18 @@ form textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(244, 208, 160);
+  background-color: rgb(16, 9, 0);
   margin-top: 0;
-  color: black;
-}
-.promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  height: 50px;
   color: white;
+  font-size: 14px;
+}
+.title p {
+  font-size: 50px;
+  color: black;
+  font-family: 'EB Garamond', serif;
+  font-weight: lighter;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.8;
 }

@@ -14,6 +14,9 @@ function App() {
 
   return (
     <>
+    <div className='Sales'>
+        <p>Don't miss our wild April sales get 30% off your entire cart</p>
+      </div>
     <NavBar />
     <main>
       <Routes>
